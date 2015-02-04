@@ -19,8 +19,13 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+        $this->load->library('Excel');
+        $this->load->model('Getdataexcel');
         $this->load->helper('url');
-		$this->load->view('welcome_message');
+        $data['nome']=$this->Getdataexcel->get_step1();
+
+
+        $this->load->view('welcome_message',$data);
 	}
 }
 
