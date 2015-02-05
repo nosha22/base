@@ -17,8 +17,9 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-------------------------------------------------------------------------->
-    <link href="<?php echo base_url(); ?>assets/css/bootstrap.css" rel="stylesheet">
-    <link href="<?php echo base_url(); ?>assets/css/font-awesome.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/css/bootstrap.css" rel="stylesheet">
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -30,7 +31,8 @@
 
         <i class="fa fa-buysellads"></i>
         <i class="fa fa-folder-open"></i>
-        <?php echo $nome; ?>
+
+        <?php echo base_url(); ?>
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
 		<p>If you would like to edit this page you'll find it located at:</p>

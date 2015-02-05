@@ -26,7 +26,7 @@ class Getdataexcel extends CI_Model {
 
         //$total_sheets=$objPHPExcel->getSheetCount();
         $total_sheets=$objPHPExcel->getActiveSheet()->getCell('B49')->getValue();
-      
+
         return $total_sheets;
     }
 
