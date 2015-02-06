@@ -61,8 +61,18 @@ class Welcome extends CI_Controller {
 
     public function index()
     {
+        //load the helper library
+        $this->load->helper('form');
         $this->load->helper('url');
-        $this->load->view('welcome_message');
+        //Set the message for the first time
+        $data = array('msg' => "Upload File");
+
+        $data['upload_data'] = '';
+
+        //load the view/upload.php with $data
+        $this->load->view('welcome_message', $data);
+
+        //$this->load->view('welcome_message');
     }
 }
 

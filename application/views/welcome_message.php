@@ -28,6 +28,25 @@
 	<h1>Welcome to CodeIgniter!</h1>
 
     <div id="body">
+        <code><?php echo $msg;?></code>
+        <code>
+            <?php if($upload_data != ''):?>
+            <?php var_dump($upload_data);?>
+            <?php echo "--------->".$caminhofx;?>
+        </code>
+        <img scr="<?php echo $upload_data['full_path'];?>">
+        <?php endif;?>
+
+        <?php echo form_open_multipart('upload_file/upload_it');?>
+
+        <input type="text" class="form-control" placeholder="Nome da Pasta" name="pasta">
+        <input type="file" name="userfile" size="20" />
+
+        <br /><br />
+        <?php echo "O CONTEUDO DA CELULA NO FX ERAAAAA>".$valor_cel;?>
+        <input type="submit" value="upload" />
+
+        </form>
 
         <i class="fa fa-buysellads"></i>
         <i class="fa fa-folder-open"></i>
